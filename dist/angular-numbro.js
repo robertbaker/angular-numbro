@@ -1,6 +1,6 @@
 /**
  * AngularJS filter for Numbro.js: number formatting as a filter
- * @version v1.1.7 - 2015-05-11
+ * @version v1.1.8 - 2015-05-11
  * @link https://github.com/robertbaker/angular-numbro
  * @author Dave Bauman <baumandm@gmail.com>
  * @author Robert Baker
@@ -51,6 +51,17 @@
                 format = $numbroConfig.customFormat(format);
 
                 return numbro(input).format(format);
+            };
+        }])
+        .filter('numbroCurrency', ['$numbroConfig', function($numbroConfig) {
+            return function(input, format) {
+                if (input == null) {
+                    return input;
+                }
+
+                format = $numbroConfig.customFormat(format);
+
+                return numbro(input).formatCurrency(format);
             };
         }]);
 })();
