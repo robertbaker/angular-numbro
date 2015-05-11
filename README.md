@@ -65,7 +65,11 @@ Numbro.js defines the default format as '0,0', so this format is used if none is
 
 ```js
 app.config(['$numbroConfigProvider', function ($numbroConfigProvider) {
-    $numbroConfigProvider.setDefaultFormat('0.0 $');
+        $numbroConfigProvider.setFormat('float', '0.00');
+        $numbroConfigProvider.setFormat('currency-no-sign', '0,0.00');
+        $numbroConfigProvider.setFormat('currency-no-cents', '$0,0');
+        $numbroConfigProvider.setDefaultFormat('$0,0.00');
+        $numbroConfigProvider.setDefaultCurrencyFormat('0,0[.]00');
 }]);
 ```
 
