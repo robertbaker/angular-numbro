@@ -53,6 +53,17 @@ window.require.define({
 
                     return numbro(input).format(format);
                 };
+            }])
+            .filter('numbroCurrency', ['$numbroConfig', function($numbroConfig) {
+                return function(input, format) {
+                    if (input == null) {
+                        return input;
+                    }
+
+                    format = $numbroConfig.customFormat(format);
+
+                    return numbro(input).formatCurrency(format);
+                };
             }]);
     }
 });
