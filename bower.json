@@ -9,7 +9,7 @@
     "url": "git@github.com:robertbaker/angular-numbro.git"
   },
   "dependencies": {
-    "numbro": "^1.0"
+    "numbro": "^1.1.1"
   },
   "keywords": [
     "numbro",
