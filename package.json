@@ -2,11 +2,11 @@
   "name": "angular-numbro",
   "description": "AngularJS filter for Numbro.js: number formatting as a filter",
   "version": "1.2.2",
-  "homepage": "https://github.com/baumandm/angular-numbro",
-  "author": "Dave Bauman <baumandm@gmail.com>",
+  "homepage": "https://github.com/robertbaker/angular-numbro",
+  "author": "Robert Baker <robert.d.baker@icloud.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:baumandm/angular-numbro.git"
+    "url": "git@github.com:robertbaker/angular-numbro.git"
   },
   "licenses": [
     {
