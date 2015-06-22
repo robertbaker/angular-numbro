@@ -8,6 +8,7 @@
     "type": "git",
     "url": "git@github.com:robertbaker/angular-numbro.git"
   },
+  "main": "angular-numbro.js",
   "licenses": [
     {
       "type": "MIT",
