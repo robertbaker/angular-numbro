@@ -1,4 +1,4 @@
-window.require.define({"angular-numeraljs": function(exports, require, module) {
+window.require.define({"angular-numbro": function(exports, require, module) {
 /**
  * AngularJS filter for Numbro.js: number formatting as a filter
  * @version v1.2.2 - 2015-06-13
