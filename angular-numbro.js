@@ -1,16 +1,19 @@
-window.require.define({"angular-numbro": function(exports, require, module) {
+'format amd';
+/* global define */
+
+(function () {
+	'use strict';
+
+	function angularNumbro(angular, numbro) {
 /**
  * AngularJS filter for Numbro.js: number formatting as a filter
- * @version v1.2.2 - 2015-06-13
+ * @version v1.2.4 - 2015-05-11
  * @link https://github.com/robertbaker/angular-numbro
  * @author Dave Bauman <baumandm@gmail.com>
  * @author Robert Baker
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
- /*global numeral */
-    'use strict';
-
-    angular.module('ngNumbro', [])
+    return angular.module('ngNumbro', [])
         .provider('$numbroConfig', function() {
             var formats = {};
 
@@ -64,4 +67,15 @@ window.require.define({"angular-numbro": function(exports, require, module) {
                 return numbro(input).formatCurrency(format);
             };
         }]);
-}});
+
+}
+
+	if (typeof define === 'function' && define.amd) {
+		define(['angular', 'numbro'], angularNumbro);
+	} else if (typeof module !== 'undefined' && module && module.exports) {
+		angularNumbro(angular, require('numbro'));
+		module.exports = 'angularNumbro';
+	} else {
+		angularNumbro(angular, window.numbro);
+	}
+})();
