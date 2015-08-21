@@ -1,12 +1,4 @@
-/**
- * AngularJS filter for Numbro.js: number formatting as a filter
- * @version v1.1.8 - 2015-05-11
- * @link https://github.com/robertbaker/angular-numbro
- * @author Dave Bauman <baumandm@gmail.com>
- * @author Robert Baker
- * @license MIT License, http://www.opensource.org/licenses/MIT
- */
-
+/* global numbro */
 (function() {
     'use strict';
 
