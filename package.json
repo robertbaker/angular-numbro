@@ -1,14 +1,14 @@
 {
   "name": "angular-numbro",
   "description": "AngularJS filter for Numbro.js: number formatting as a filter",
-  "version": "1.4.0",
+  "version": "1.5.1",
   "homepage": "https://github.com/robertbaker/angular-numbro",
   "author": "Robert Baker <se7enalive@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git@github.com:robertbaker/angular-numbro.git"
   },
-  "main": "angular-numbro.js",
+  "main": "./angular-numbro.js",
   "licenses": [
     {
       "type": "MIT",
@@ -16,7 +16,7 @@
     }
   ],
   "dependencies": {
-    "numbro": "~1.4.0"
+    "numbro": "^1.5.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -27,7 +27,7 @@
     "grunt-ng-annotate": "*",
     "grunt-wrap-commonjs": "^0.4.4",
     "jasmine": "^2.3.2",
-    "karma": "~0.13",
+    "karma": "^0.13.10",
     "karma-jasmine": "*",
     "karma-phantomjs-launcher": "*",
     "phantomjs": "^1.9.18"
