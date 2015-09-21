@@ -1,3 +1,4 @@
+window.require.define({"angular-numbro": function(exports, require, module) {
 /**
  * AngularJS filter for Numbro.js: number formatting as a filter
  * @version v1.5.1 - 2015-09-21
@@ -64,3 +65,5 @@
             };
         }]);
 })();
+}});
+

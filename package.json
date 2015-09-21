@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git@github.com:robertbaker/angular-numbro.git"
   },
-  "main": "./angular-numbro.js",
+  "main": "./commonjs/angular-numbro.js",
   "licenses": [
     {
       "type": "MIT",
@@ -25,7 +25,7 @@
     "grunt-contrib-uglify": "*",
     "grunt-karma": "*",
     "grunt-ng-annotate": "*",
-    "grunt-wrap-commonjs": "^0.4.4",
+    "grunt-commonjs": "^0.2.0-rc7",
     "jasmine": "^2.3.2",
     "karma": "^0.13.10",
     "karma-jasmine": "*",
