@@ -1,7 +1,7 @@
 {
   "name": "angular-numbro",
   "description": "AngularJS filter for Numbro.js: number formatting as a filter",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "homepage": "https://github.com/robertbaker/angular-numbro",
   "author": "Robert Baker <se7enalive@gmail.com>",
   "repository": {
